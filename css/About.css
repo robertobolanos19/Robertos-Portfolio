@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+nav {
+    height: 80px;
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+label {
+    font-size: 35px;
+    line-height: 70px;
+    padding: 0 60px;
+}
+
+
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+    
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-top: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.me-section {
+    overflow: hidden;
+    text-align: center;
+    padding: 0%;
+}
+
+.me-section h1 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.border {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    margin-bottom: 40px;
+    background-color: white;
+    
+}
+
+.name {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ps {
+    margin-bottom: 40px;
+}
+
+.ps a {
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.ps img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.ps a:hover  img {
+filter: none;
+}
+
+.section {
+    width: 40%;
+    margin: auto;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#skill {
+    line-height: 2;
+}
+
+.Achievements {
+    text-decoration: underline;
+    color: lightblue;
+}
+
+
+@media (max-width: 990px) {
+
+
+
+    label {
+        font-size: 60px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        font-size: 20px;
+    }
+    
+    #hour {
+        text-decoration: underline;
+        color: lightblue;
+    }
+    
+
+    nav ul li{
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        line-height: 2.5;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .section {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 20px;
+    }
+
+}
